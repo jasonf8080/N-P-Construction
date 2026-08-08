@@ -10,9 +10,9 @@ const stats = [
 export default function TrustStrip() {
   return (
     <div className="bg-secondary-dark py-4">
-      <div className="mx-auto flex max-w-6xl flex-wrap justify-around gap-4 px-6 text-center">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-6 text-center md:grid-cols-4">
         {stats.map((stat) => (
-          <div key={stat.label} className="text-sm font-semibold text-neutral-200">
+          <div key={stat.label} className="flex flex-col items-center justify-center text-sm font-semibold text-neutral-200">
             <b className="block text-xl font-extrabold text-primary md:text-2xl">{stat.value}</b>
             {stat.label}
           </div>
