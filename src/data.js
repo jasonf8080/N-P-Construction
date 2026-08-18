@@ -156,8 +156,8 @@ export const photos = {
       alt: 'Asphalt shingle roof replacement on a residential home',
     },
     siding: {
-      src: '/images/board-and-batten-siding-installation.jpg',
-      alt: 'Board and batten siding installation in progress',
+      src: '/images/house-siding-installation-in-progress.jpg',
+      alt: 'House siding installation in progress on a residential exterior',
     },
     painting: {
       src: '/images/board-and-batten-siding-installation.jpg',

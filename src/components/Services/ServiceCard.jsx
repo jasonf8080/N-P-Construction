@@ -7,7 +7,7 @@ export default function ServiceCard({ service }) {
   return (
     <div data-reveal className="group relative overflow-hidden rounded-xl bg-secondary-dark text-white shadow-2xl">
       {photo ? (
-        <div className="relative h-60 overflow-hidden bg-[#0f1115] md:h-80 lg:h-72">
+        <div className="relative h-72 overflow-hidden bg-[#0f1115] md:h-[23rem] lg:h-[21rem]">
           <img
             src={photo.src}
             alt={photo.alt}
@@ -22,7 +22,7 @@ export default function ServiceCard({ service }) {
         <div className="h-2 bg-primary" />
       )}
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[#111111]/90 via-[#111111]/60 to-transparent px-4 pb-5 pt-16 md:px-6 md:pb-6 md:pt-20">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[#111111]/90 via-[#111111]/65 to-transparent px-4 pb-6 pt-20 md:px-6 md:pb-7 md:pt-24">
         <div className="pointer-events-auto flex flex-col">
           <h3 className="mb-2 text-[1.1rem] font-black leading-tight md:mb-3 md:text-[1.28rem]">
             {service.name}
