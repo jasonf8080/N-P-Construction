@@ -19,7 +19,7 @@ export default function ServiceCard({ service }) {
   return (
     <div
       data-reveal
-      className="group relative overflow-hidden rounded-[28px] bg-secondary-dark text-white shadow-2xl"
+      className="group relative overflow-hidden rounded-xl bg-secondary-dark text-white shadow-2xl"
     >
       {photo ? (
         <div className="relative h-60 overflow-hidden bg-[#0f1115] md:h-80 lg:h-72">
@@ -41,13 +41,12 @@ export default function ServiceCard({ service }) {
         <div className="absolute -top-3 left-4 h-3 w-10 bg-secondary-dark [clip-path:polygon(0_100%,100%_0,100%_100%)] md:-top-4 md:left-6 md:h-4 md:w-12" />
 
         <div className="flex flex-col">
-          <h3 className="mb-2.5 inline-flex items-center gap-1.5 text-base font-black leading-tight md:mb-3 md:gap-2 md:text-lg">
+          <h3 className="mb-3 inline-flex items-center gap-2.5 text-base font-black leading-tight md:mb-4 md:gap-3 md:text-lg">
             <span className="inline-flex h-6 w-6 items-center justify-center rounded-md border border-primary/90 text-primary md:h-7 md:w-7">
               <Icon aria-hidden="true" />
             </span>
             <span>{service.name}</span>
           </h3>
-          <span className="mb-3 block h-1 w-10 bg-primary md:mb-4 md:w-12" />
 
           <p className="mb-3 text-xs leading-relaxed text-neutral-200 md:mb-4 md:text-sm">{service.description}</p>
           {service.price && <p className="mb-4 text-sm font-bold text-primary">{service.price}</p>}
