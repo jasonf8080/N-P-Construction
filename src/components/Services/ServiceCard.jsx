@@ -5,10 +5,7 @@ export default function ServiceCard({ service }) {
   const photo = service.photoTag ? photos.service[service.photoTag] : null;
 
   return (
-    <div
-      data-reveal
-      className="group relative overflow-hidden rounded-xl bg-secondary-dark text-white shadow-2xl"
-    >
+    <div data-reveal className="group relative overflow-hidden rounded-xl bg-secondary-dark text-white shadow-2xl">
       {photo ? (
         <div className="relative h-60 overflow-hidden bg-[#0f1115] md:h-80 lg:h-72">
           <img
@@ -17,19 +14,17 @@ export default function ServiceCard({ service }) {
             width="1400"
             height="900"
             loading="lazy"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent via-secondary-dark/60 to-secondary-dark md:h-32" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111111]/85 via-[#111111]/20 to-transparent" />
         </div>
       ) : (
         <div className="h-2 bg-primary" />
       )}
 
-      <div className="relative -mt-8 bg-secondary-dark px-4 pb-6 pt-6 md:-mt-10 md:px-6 md:pb-8 md:pt-8">
-        <div className="absolute -top-3 left-4 h-3 w-10 bg-secondary-dark [clip-path:polygon(0_100%,100%_0,100%_100%)] md:-top-4 md:left-6 md:h-4 md:w-12" />
-
-        <div className="flex flex-col">
-          <h3 className="mb-3 text-[1.1rem] font-black leading-tight md:mb-4 md:text-[1.28rem]">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[#111111]/90 via-[#111111]/60 to-transparent px-4 pb-5 pt-16 md:px-6 md:pb-6 md:pt-20">
+        <div className="pointer-events-auto flex flex-col">
+          <h3 className="mb-2 text-[1.1rem] font-black leading-tight md:mb-3 md:text-[1.28rem]">
             {service.name}
           </h3>
 

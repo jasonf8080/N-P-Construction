@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[640px] items-center bg-secondary-dark">
       <img
-        src={photos.hero.src}
-        alt={photos.hero.alt}
+        src="/images/white-board-and-batten-siding-stone-veneer.jpg"
+        alt="White board and batten siding paired with stone veneer accents on a home exterior"
         width="1800"
         height="1200"
         loading="eager"

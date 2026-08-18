@@ -177,25 +177,41 @@ export const photos = {
     },
   },
   gallery: [
-    { src: '/images/bath-shower-glass.jpg', alt: 'Walk-in shower with sliding glass door and gray subway tile', category: 'bath', caption: 'Custom Tiled Shower' },
-    { src: '/images/bath-toilet-tile-1.jpg', alt: 'Toilet nook with gray subway tile wainscoting', category: 'bath', caption: 'Bath Remodel — Tile Detail' },
-    { src: '/images/bath-vanity-sink.jpg', alt: 'Bathroom vanity with granite countertop and oil-rubbed bronze faucet', category: 'bath', caption: 'Custom Vanity & Countertop' },
-    { src: '/images/bath-shower-fixtures.jpg', alt: 'Shower with oil-rubbed bronze body sprays and rain shower head', category: 'bath', caption: 'Multi-Head Shower System' },
-    { src: '/images/bath-toilet-tile-2.jpg', alt: 'Finished bathroom with tile wainscoting and glass shower enclosure', category: 'bath', caption: 'Full Bath Remodel' },
-    { src: '/images/kitchen-cabinets-hood.jpg', alt: 'White kitchen cabinets with arabesque tile backsplash and range hood', category: 'kitchen', caption: 'Kitchen Cabinetry & Backsplash' },
-    { src: '/images/kitchen-pendant-lights.jpg', alt: 'Kitchen with glass pendant lighting over island', category: 'kitchen', caption: 'Kitchen Lighting & Finishes' },
-    { src: '/images/deck-construction.jpg', alt: 'Newly built composite deck with white and black railing', category: 'outdoor', caption: 'Custom Composite Deck' },
-    { src: '/images/deck-patio-firepit-fall.jpg', alt: 'Deck with paver patio and stone fire pit in autumn', category: 'outdoor', caption: 'Deck & Paver Patio' },
-    { src: '/images/patio-firepit-night.jpg', alt: 'Paver patio with fire pit and landscape lighting at night', category: 'outdoor', caption: 'Outdoor Living & Lighting' },
+    { src: '/images/bath-shower-glass.jpg', alt: 'Walk-in shower with sliding glass door and gray subway tile', category: 'kitchen-bath-remodeling', caption: 'Custom Tiled Shower' },
+    { src: '/images/bath-toilet-tile-1.jpg', alt: 'Toilet nook with gray subway tile wainscoting', category: 'tiling', caption: 'Tile Detail Work' },
+    { src: '/images/bath-vanity-sink.jpg', alt: 'Bathroom vanity with granite countertop and oil-rubbed bronze faucet', category: 'kitchen-bath-remodeling', caption: 'Custom Vanity & Countertop' },
+    { src: '/images/bath-shower-fixtures.jpg', alt: 'Shower with oil-rubbed bronze body sprays and rain shower head', category: 'kitchen-bath-remodeling', caption: 'Multi-Head Shower System' },
+    { src: '/images/bath-toilet-tile-2.jpg', alt: 'Finished bathroom with tile wainscoting and glass shower enclosure', category: 'kitchen-bath-remodeling', caption: 'Full Bath Remodel' },
+    { src: '/images/kitchen-cabinets-hood.jpg', alt: 'White kitchen cabinets with arabesque tile backsplash and range hood', category: 'kitchen-bath-remodeling', caption: 'Kitchen Cabinetry & Backsplash' },
+    { src: '/images/kitchen-pendant-lights.jpg', alt: 'Kitchen with glass pendant lighting over island', category: 'kitchen-bath-remodeling', caption: 'Kitchen Lighting & Finishes' },
+    { src: '/images/bathroom-remodel-arched-doorway.jpg', alt: 'Bathroom remodel with arched doorway and updated finishes', category: 'kitchen-bath-remodeling', caption: 'Bathroom Remodel Upgrade' },
+    { src: '/images/black-tile-walk-in-shower.jpg', alt: 'Black tile walk-in shower with modern fixtures', category: 'tiling', caption: 'Modern Tile Shower' },
+    { src: '/images/custom-tiled-shower-glass-door-niche.jpg', alt: 'Custom tiled shower with niche and glass door', category: 'tiling', caption: 'Custom Tile Niche Design' },
+    { src: '/images/gray-tile-shower-body-sprays.jpg', alt: 'Gray tile shower with body sprays and polished fixtures', category: 'tiling', caption: 'Tile Shower Fixtures' },
+    { src: '/images/gray-vertical-tile-shower-remodel.jpg', alt: 'Vertical gray tile shower remodel with glass enclosure', category: 'tiling', caption: 'Vertical Tile Shower Remodel' },
+    { src: '/images/marble-mosaic-shower-pan-black-fixtures.jpg', alt: 'Marble mosaic shower pan with black fixtures', category: 'tiling', caption: 'Marble Mosaic Detail' },
+    { src: '/images/matte-black-multi-function-shower-valve.jpg', alt: 'Matte black multi-function shower valve in a modern bathroom', category: 'kitchen-bath-remodeling', caption: 'Signature Bathroom Fixtures' },
+    { src: '/images/asphalt-shingle-roof-replacement.jpg', alt: 'New asphalt shingle roof replacement on a residential home', category: 'roofing', caption: 'Roof Replacement Project' },
+    { src: '/images/board-and-batten-siding-installation.jpg', alt: 'Board and batten siding installation in progress', category: 'siding', caption: 'Board & Batten Siding' },
+    { src: '/images/home-exterior-board-and-batten-stone-veneer.jpg', alt: 'Home exterior with board and batten siding and stone veneer', category: 'siding', caption: 'Exterior Siding & Stone Veneer' },
+    { src: '/images/house-siding-installation-in-progress.jpg', alt: 'Siding installation on a home exterior in progress', category: 'siding', caption: 'Siding Installation In Progress' },
+    { src: '/images/white-board-and-batten-siding-stone-veneer.jpg', alt: 'White board and batten siding paired with stone veneer accents', category: 'siding', caption: 'Fresh Exterior Upgrade' },
+    { src: '/images/deck-construction.jpg', alt: 'Newly built composite deck with white and black railing', category: 'decks-patios', caption: 'Custom Composite Deck' },
+    { src: '/images/deck-patio-firepit-fall.jpg', alt: 'Deck with paver patio and stone fire pit in autumn', category: 'decks-patios', caption: 'Deck & Paver Patio' },
+    { src: '/images/front-porch-composite-deck-railings.jpg', alt: 'Front porch with composite deck railings and updated finishes', category: 'decks-patios', caption: 'Front Porch Upgrade' },
+    { src: '/images/patio-firepit-night.jpg', alt: 'Paver patio with fire pit and landscape lighting at night', category: 'decks-patios', caption: 'Outdoor Living & Lighting' },
+    { src: '/images/pressure-treated-deck-framing-construction.jpg', alt: 'Pressure-treated deck framing during construction', category: 'decks-patios', caption: 'Deck Framing & Build' },
+    { src: '/images/raised-deck-and-stairs-exterior-remodel.jpg', alt: 'Raised deck and stairs exterior remodel project', category: 'decks-patios', caption: 'Raised Deck & Stairs' },
+    { src: '/images/excavation-foundation-measurement.jpg', alt: 'Excavation and foundation measurement work at a project site', category: 'general-home-improvement', caption: 'Site Preparation & Foundations' },
   ],
   team: [], // [PLACEHOLDER — confirm with client] no team/staff photos provided
 };
 
 export const galleryCategories = [
   { id: 'all', label: 'All Projects' },
-  { id: 'kitchen', label: 'Kitchen' },
-  { id: 'bath', label: 'Bath' },
-  { id: 'outdoor', label: 'Decks & Patios' },
+  ...services
+    .filter((service) => service.slug !== 'painting')
+    .map((service) => ({ id: service.slug, label: service.name })),
 ];
 
 export const seoDefaults = {
