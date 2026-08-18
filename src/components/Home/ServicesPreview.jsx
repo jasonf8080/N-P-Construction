@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import { services } from '../../data';
+import ServiceCard from '../Services/ServiceCard';
+
+const featuredServiceSlugs = ['kitchen-bath-remodeling', 'general-home-improvement', 'decks-patios'];
 
 export default function ServicesPreview() {
   const scope = useScrollReveal();
+  const featuredServices = featuredServiceSlugs
+    .map((slug) => services.find((service) => service.slug === slug))
+    .filter(Boolean);
 
   return (
     <section ref={scope} className="py-20 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <span className="mb-2 inline-block text-xs font-bold uppercase tracking-[2px] text-primary">What We Do</span>
         <h2 className="mb-4 text-3xl font-extrabold text-secondary-dark md:text-5xl">Our Services</h2>
         <p className="mb-12 max-w-xl text-base text-neutral-600 md:text-lg">
@@ -15,21 +21,8 @@ export default function ServicesPreview() {
         </p>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {services.slice(0, 6).map((service) => (
-            <div
-              key={service.slug}
-              data-reveal
-              className="overflow-hidden rounded-xl border border-neutral-200 transition-transform hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="h-1.5 bg-primary" />
-              <div className="p-6">
-                <h3 className="mb-2 text-lg font-bold text-secondary-dark">{service.name}</h3>
-                <p className="mb-4 text-sm text-neutral-600">{service.description}</p>
-                <Link to="/services" className="text-sm font-bold text-primary hover:text-primary-dark">
-                  Learn more →
-                </Link>
-              </div>
-            </div>
+          {featuredServices.map((service) => (
+            <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
 
