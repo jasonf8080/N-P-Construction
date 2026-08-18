@@ -24,49 +24,49 @@ export const services = [
     name: 'Kitchen & Bath Remodeling',
     description: 'Full kitchen and bathroom renovations, from tile and fixtures to custom cabinetry.',
     price: null,
-    photoTag: 'kitchen-cabinets-hood',
+    photoTag: 'kitchen-bath-remodeling',
   },
   {
     slug: 'roofing',
     name: 'Roofing',
     description: 'Roof repair and replacement done right, protecting the home you\'ve invested in.',
     price: null,
-    photoTag: null,
+    photoTag: 'roofing',
   },
   {
     slug: 'siding',
     name: 'Siding',
     description: 'Siding installation and replacement that boosts curb appeal and protects your home.',
     price: null,
-    photoTag: null,
+    photoTag: 'siding',
   },
   {
     slug: 'painting',
     name: 'Painting',
     description: 'Interior and exterior painting with clean lines and lasting finishes.',
     price: null,
-    photoTag: null,
+    photoTag: 'painting',
   },
   {
     slug: 'tiling',
     name: 'Tiling',
     description: 'Custom tile work for showers, floors, and backsplashes — precision that lasts.',
     price: null,
-    photoTag: 'bath-shower-glass',
+    photoTag: 'tiling',
   },
   {
     slug: 'decks-patios',
     name: 'Decks & Patios',
     description: 'Custom deck design and construction, plus paver patios and outdoor living spaces.',
     price: null,
-    photoTag: 'deck-patio-firepit-fall',
+    photoTag: 'decks-patios',
   },
   {
     slug: 'general-home-improvement',
     name: 'General Home Improvement',
     description: 'Whole-home renovation and improvement projects, managed start to finish.',
     price: null,
-    photoTag: null,
+    photoTag: 'general-home-improvement',
   },
 ];
 
@@ -147,6 +147,34 @@ export const photos = {
     'kitchen-cabinets-hood': { src: '/images/kitchen-cabinets-hood.jpg', alt: 'White kitchen cabinets with arabesque tile backsplash and stainless range hood' },
     'bath-shower-glass': { src: '/images/bath-shower-glass.jpg', alt: 'Walk-in shower with sliding glass door and gray subway tile' },
     'deck-patio-firepit-fall': { src: '/images/deck-patio-firepit-fall.jpg', alt: 'Composite deck with paver patio and stone fire pit in autumn' },
+    'kitchen-bath-remodeling': {
+      src: '/images/matte-black-multi-function-shower-valve.jpg',
+      alt: 'Matte black multi-function shower valve in a bathroom remodel',
+    },
+    roofing: {
+      src: '/images/asphalt-shingle-roof-replacement.jpg',
+      alt: 'Asphalt shingle roof replacement on a residential home',
+    },
+    siding: {
+      src: '/images/board-and-batten-siding-installation.jpg',
+      alt: 'Board and batten siding installation in progress',
+    },
+    painting: {
+      src: '/images/board-and-batten-siding-installation.jpg',
+      alt: 'Exterior home improvement project photo for painting services',
+    },
+    tiling: {
+      src: '/images/marble-mosaic-shower-pan-black-fixtures.jpg',
+      alt: 'Marble mosaic shower pan with black fixtures and custom tile',
+    },
+    'decks-patios': {
+      src: '/images/raised-deck-and-stairs-exterior-remodel.jpg',
+      alt: 'Raised deck and stairs exterior remodel project',
+    },
+    'general-home-improvement': {
+      src: '/images/bath-shower-fixtures.jpg',
+      alt: 'Bathroom shower fixture upgrade as part of a general home improvement project',
+    },
   },
   gallery: [
     { src: '/images/bath-shower-glass.jpg', alt: 'Walk-in shower with sliding glass door and gray subway tile', category: 'bath', caption: 'Custom Tiled Shower' },

@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
 import { business, contact } from '../../data';
 
 const navItems = [
+  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
   { label: 'Gallery', to: '/gallery' },
