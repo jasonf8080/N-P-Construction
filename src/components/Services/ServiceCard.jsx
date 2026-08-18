@@ -1,20 +1,8 @@
 import { Link } from 'react-router-dom';
-import { FaBath, FaHome, FaPaintRoller, FaThLarge, FaTree, FaTools } from 'react-icons/fa';
 import { photos } from '../../data';
-
-const serviceIcons = {
-  'kitchen-bath-remodeling': FaBath,
-  roofing: FaHome,
-  siding: FaHome,
-  painting: FaPaintRoller,
-  tiling: FaThLarge,
-  'decks-patios': FaTree,
-  'general-home-improvement': FaTools,
-};
 
 export default function ServiceCard({ service }) {
   const photo = service.photoTag ? photos.service[service.photoTag] : null;
-  const Icon = serviceIcons[service.slug] || FaTools;
 
   return (
     <div
@@ -41,11 +29,8 @@ export default function ServiceCard({ service }) {
         <div className="absolute -top-3 left-4 h-3 w-10 bg-secondary-dark [clip-path:polygon(0_100%,100%_0,100%_100%)] md:-top-4 md:left-6 md:h-4 md:w-12" />
 
         <div className="flex flex-col">
-          <h3 className="mb-3 inline-flex items-center gap-2.5 text-base font-black leading-tight md:mb-4 md:gap-3 md:text-lg">
-            <span className="inline-flex h-6 w-6 items-center justify-center rounded-md border border-primary/90 text-primary md:h-7 md:w-7">
-              <Icon aria-hidden="true" />
-            </span>
-            <span>{service.name}</span>
+          <h3 className="mb-3 text-[1.1rem] font-black leading-tight md:mb-4 md:text-[1.28rem]">
+            {service.name}
           </h3>
 
           <p className="mb-3 text-xs leading-relaxed text-neutral-200 md:mb-4 md:text-sm">{service.description}</p>
@@ -53,10 +38,10 @@ export default function ServiceCard({ service }) {
 
           <Link
             to="/contact"
-            className="inline-flex w-fit items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wide text-white transition-colors hover:bg-primary-dark md:px-3.5 md:text-[11px]"
+            className="inline-flex w-fit items-center gap-1 rounded-md bg-transparent px-0 py-1 text-[12px] font-extrabold uppercase tracking-wide text-primary transition-colors hover:text-primary/80 md:text-[13px]"
           >
             Learn More
-            <span aria-hidden="true">→</span>
+            <span aria-hidden="true" className="text-base leading-none">›</span>
           </Link>
         </div>
       </div>
