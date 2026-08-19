@@ -1,6 +1,6 @@
 import { SEO } from '../components/main';
 import { AboutHero, AboutStory } from '../components/About';
-import { WhyChooseUs, CTABand } from '../components/Home';
+import { CTABand } from '../components/Home';
 
 export default function About() {
   return (
@@ -12,7 +12,6 @@ export default function About() {
       />
       <AboutHero />
       <AboutStory />
-      <WhyChooseUs />
       <CTABand />
     </>
   );

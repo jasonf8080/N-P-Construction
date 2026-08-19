@@ -139,9 +139,9 @@ export const branding = {
 export const photos = {
   hero: { src: '/images/patio-firepit-night.jpg', alt: 'Paver patio with stone fire pit and landscape lighting at night' },
   about: [
-    { src: '/images/bath-shower-glass.jpg', alt: 'Custom tiled walk-in shower with sliding glass door' },
-    { src: '/images/kitchen-cabinets-hood.jpg', alt: 'Custom white kitchen cabinetry with range hood and arabesque tile backsplash' },
-    { src: '/images/deck-patio-firepit-fall.jpg', alt: 'Composite deck with paver patio and stone fire pit in autumn' },
+    { src: '/images/remodeled-kitchen-cabinets.jpg', alt: 'Remodeled kitchen with custom white cabinetry and designer backsplash' },
+    { src: '/images/house-siding-installation-in-progress.jpg', alt: 'Residential siding installation in progress on an exterior wall' },
+    { src: '/images/renovated-stone-patio.jpg', alt: 'Renovated stone patio and outdoor living area' },
   ],
   service: {
     'kitchen-cabinets-hood': { src: '/images/kitchen-cabinets-hood.jpg', alt: 'White kitchen cabinets with arabesque tile backsplash and stainless range hood' },

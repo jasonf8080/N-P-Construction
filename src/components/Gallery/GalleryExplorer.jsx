@@ -12,13 +12,13 @@ export default function GalleryExplorer() {
   return (
     <section ref={scope} className="py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-10 flex flex-wrap gap-3">
+        <div className="-mx-1 mb-10 flex gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:flex-wrap md:overflow-visible md:pb-0">
           {galleryCategories.map((category) => (
             <button
               key={category.id}
               type="button"
               onClick={() => setActiveCategory(category.id)}
-              className={`rounded-full border-2 px-5 py-2 text-sm font-bold transition-colors ${
+              className={`whitespace-nowrap rounded-full border-2 px-5 py-2 text-sm font-bold transition-colors ${
                 activeCategory === category.id
                   ? 'border-primary bg-primary text-white'
                   : 'border-neutral-200 bg-white text-secondary hover:border-primary hover:text-primary'
