@@ -16,13 +16,13 @@ export default function ServiceCard({ service }) {
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111111]/85 via-[#111111]/20 to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#2A2A2A]/85 via-[#2A2A2A]/20 to-transparent" />
         </div>
       ) : (
         <div className="h-2 bg-primary" />
       )}
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[#111111]/90 via-[#111111]/65 to-transparent px-4 pb-6 pt-20 md:px-6 md:pb-7 md:pt-24">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[#2A2A2A]/90 via-[#2A2A2A]/65 to-transparent px-4 pb-6 pt-20 md:px-6 md:pb-7 md:pt-24">
         <div className="pointer-events-auto flex flex-col">
           <h3 className="mb-2 text-[1.1rem] font-black leading-tight md:mb-3 md:text-[1.28rem]">
             {service.name}

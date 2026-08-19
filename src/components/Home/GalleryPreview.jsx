@@ -15,12 +15,12 @@ export default function GalleryPreview() {
           A look at real N&P projects across the Hudson Valley.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="-mx-2 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {featured.map((photo) => (
             <figure
               key={photo.src + photo.caption}
               data-reveal
-              className="group relative aspect-square overflow-hidden rounded-lg"
+              className="group relative h-[280px] w-[80%] shrink-0 snap-center overflow-hidden rounded-xl md:h-[420px] md:w-[34%]"
             >
               <img
                 src={photo.src}
@@ -28,9 +28,10 @@ export default function GalleryPreview() {
                 width="600"
                 height="600"
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+              <figcaption className="absolute inset-x-0 bottom-0 pb-6 pl-6 pr-4 pt-4 text-sm font-bold text-white md:pb-7 md:pl-7">
                 {photo.caption}
               </figcaption>
             </figure>

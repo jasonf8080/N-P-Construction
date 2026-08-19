@@ -29,7 +29,7 @@ export default function GalleryExplorer() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
           {visiblePhotos.map((photo) => (
             <figure
               key={photo.src + photo.caption}
@@ -44,7 +44,7 @@ export default function GalleryExplorer() {
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-xs font-bold text-white opacity-0 transition-opacity group-hover:opacity-100">
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent pb-5 pl-5 pr-3 pt-3 text-sm font-bold text-white opacity-0 transition-opacity group-hover:opacity-100 md:pb-6 md:pl-6 md:text-base">
                 {photo.caption}
               </figcaption>
             </figure>

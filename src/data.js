@@ -177,32 +177,35 @@ export const photos = {
     },
   },
   gallery: [
-    { src: '/images/bath-shower-glass.jpg', alt: 'Walk-in shower with sliding glass door and gray subway tile', category: 'kitchen-bath-remodeling', caption: 'Custom Tiled Shower' },
-    { src: '/images/bath-toilet-tile-1.jpg', alt: 'Toilet nook with gray subway tile wainscoting', category: 'tiling', caption: 'Tile Detail Work' },
-    { src: '/images/bath-vanity-sink.jpg', alt: 'Bathroom vanity with granite countertop and oil-rubbed bronze faucet', category: 'kitchen-bath-remodeling', caption: 'Custom Vanity & Countertop' },
-    { src: '/images/bath-shower-fixtures.jpg', alt: 'Shower with oil-rubbed bronze body sprays and rain shower head', category: 'kitchen-bath-remodeling', caption: 'Multi-Head Shower System' },
-    { src: '/images/bath-toilet-tile-2.jpg', alt: 'Finished bathroom with tile wainscoting and glass shower enclosure', category: 'kitchen-bath-remodeling', caption: 'Full Bath Remodel' },
-    { src: '/images/kitchen-cabinets-hood.jpg', alt: 'White kitchen cabinets with arabesque tile backsplash and range hood', category: 'kitchen-bath-remodeling', caption: 'Kitchen Cabinetry & Backsplash' },
-    { src: '/images/kitchen-pendant-lights.jpg', alt: 'Kitchen with glass pendant lighting over island', category: 'kitchen-bath-remodeling', caption: 'Kitchen Lighting & Finishes' },
-    { src: '/images/bathroom-remodel-arched-doorway.jpg', alt: 'Bathroom remodel with arched doorway and updated finishes', category: 'kitchen-bath-remodeling', caption: 'Bathroom Remodel Upgrade' },
-    { src: '/images/black-tile-walk-in-shower.jpg', alt: 'Black tile walk-in shower with modern fixtures', category: 'tiling', caption: 'Modern Tile Shower' },
-    { src: '/images/custom-tiled-shower-glass-door-niche.jpg', alt: 'Custom tiled shower with niche and glass door', category: 'tiling', caption: 'Custom Tile Niche Design' },
-    { src: '/images/gray-tile-shower-body-sprays.jpg', alt: 'Gray tile shower with body sprays and polished fixtures', category: 'tiling', caption: 'Tile Shower Fixtures' },
-    { src: '/images/gray-vertical-tile-shower-remodel.jpg', alt: 'Vertical gray tile shower remodel with glass enclosure', category: 'tiling', caption: 'Vertical Tile Shower Remodel' },
-    { src: '/images/marble-mosaic-shower-pan-black-fixtures.jpg', alt: 'Marble mosaic shower pan with black fixtures', category: 'tiling', caption: 'Marble Mosaic Detail' },
-    { src: '/images/matte-black-multi-function-shower-valve.jpg', alt: 'Matte black multi-function shower valve in a modern bathroom', category: 'kitchen-bath-remodeling', caption: 'Signature Bathroom Fixtures' },
-    { src: '/images/asphalt-shingle-roof-replacement.jpg', alt: 'New asphalt shingle roof replacement on a residential home', category: 'roofing', caption: 'Roof Replacement Project' },
-    { src: '/images/board-and-batten-siding-installation.jpg', alt: 'Board and batten siding installation in progress', category: 'siding', caption: 'Board & Batten Siding' },
-    { src: '/images/home-exterior-board-and-batten-stone-veneer.jpg', alt: 'Home exterior with board and batten siding and stone veneer', category: 'siding', caption: 'Exterior Siding & Stone Veneer' },
-    { src: '/images/house-siding-installation-in-progress.jpg', alt: 'Siding installation on a home exterior in progress', category: 'siding', caption: 'Siding Installation In Progress' },
-    { src: '/images/white-board-and-batten-siding-stone-veneer.jpg', alt: 'White board and batten siding paired with stone veneer accents', category: 'siding', caption: 'Fresh Exterior Upgrade' },
-    { src: '/images/deck-construction.jpg', alt: 'Newly built composite deck with white and black railing', category: 'decks-patios', caption: 'Custom Composite Deck' },
-    { src: '/images/deck-patio-firepit-fall.jpg', alt: 'Deck with paver patio and stone fire pit in autumn', category: 'decks-patios', caption: 'Deck & Paver Patio' },
-    { src: '/images/front-porch-composite-deck-railings.jpg', alt: 'Front porch with composite deck railings and updated finishes', category: 'decks-patios', caption: 'Front Porch Upgrade' },
-    { src: '/images/patio-firepit-night.jpg', alt: 'Paver patio with fire pit and landscape lighting at night', category: 'decks-patios', caption: 'Outdoor Living & Lighting' },
-    { src: '/images/pressure-treated-deck-framing-construction.jpg', alt: 'Pressure-treated deck framing during construction', category: 'decks-patios', caption: 'Deck Framing & Build' },
-    { src: '/images/raised-deck-and-stairs-exterior-remodel.jpg', alt: 'Raised deck and stairs exterior remodel project', category: 'decks-patios', caption: 'Raised Deck & Stairs' },
-    { src: '/images/excavation-foundation-measurement.jpg', alt: 'Excavation and foundation measurement work at a project site', category: 'general-home-improvement', caption: 'Site Preparation & Foundations' },
+    { src: '/images/remodeled-kitchen-cabinets.jpg', alt: 'Remodeled kitchen with white custom cabinets, patterned backsplash, and range hood', category: 'kitchen-bath-remodeling', caption: 'Custom Kitchen Cabinet Remodel' },
+    { src: '/images/kitchen-lighting-fixtures.jpg', alt: 'Kitchen remodel with pendant lighting above new cabinetry and backsplash', category: 'kitchen-bath-remodeling', caption: 'Kitchen Lighting and Finishes' },
+    { src: '/images/bathroom-remodel-arched-doorway.jpg', alt: 'Bathroom remodel with arched doorway and updated tile shower area', category: 'kitchen-bath-remodeling', caption: 'Arched Bathroom Remodel' },
+    { src: '/images/sink-countertop.jpg', alt: 'Bathroom vanity with stone countertop and updated faucet beside tiled shower', category: 'kitchen-bath-remodeling', caption: 'Vanity and Countertop Upgrade' },
+    { src: '/images/matte-black-multi-function-shower-valve.jpg', alt: 'Matte black multi-function shower valve in a remodeled bathroom', category: 'kitchen-bath-remodeling', caption: 'Modern Shower Fixture Upgrade' },
+
+    { src: '/images/bathroom-tiling.jpg', alt: 'Bathroom with tiled shower surround, glass door, and dark fixture set', category: 'tiling', caption: 'Bathroom Tile and Glass Shower' },
+    { src: '/images/shower-tiling.jpg', alt: 'Gray shower tile installation with matching mosaic shower floor', category: 'tiling', caption: 'Shower Tile Installation Detail' },
+    { src: '/images/black-tile-walk-in-shower.jpg', alt: 'Black tile walk-in shower with modern hardware', category: 'tiling', caption: 'Black Tile Walk-In Shower' },
+    { src: '/images/custom-tiled-shower-glass-door-niche.jpg', alt: 'Custom tiled shower with inset niche and sliding glass door', category: 'tiling', caption: 'Custom Shower Niche and Glass Door' },
+    { src: '/images/gray-tile-shower-body-sprays.jpg', alt: 'Gray tiled shower with body sprays and handheld fixture', category: 'tiling', caption: 'Body Sprays and Tile Shower Detail' },
+    { src: '/images/marble-mosaic-shower-pan-black-fixtures.jpg', alt: 'Marble mosaic shower pan with black shower fixtures', category: 'tiling', caption: 'Marble Mosaic Shower Pan' },
+
+    { src: '/images/asphalt-shingle-roof-replacement.jpg', alt: 'Asphalt shingle roof replacement on a residential home', category: 'roofing', caption: 'Asphalt Roof Replacement' },
+
+    { src: '/images/board-and-batten-siding-installation.jpg', alt: 'Board and batten siding installation in progress on a home exterior', category: 'siding', caption: 'Board and Batten Siding Installation' },
+    { src: '/images/house-siding-installation-in-progress.jpg', alt: 'Crew installing horizontal siding on a residential exterior wall', category: 'siding', caption: 'Siding Installation In Progress' },
+    { src: '/images/house-siding.jpg', alt: 'Completed white board and batten siding with stone veneer base', category: 'siding', caption: 'Board and Batten with Stone Veneer' },
+    { src: '/images/home-exterior-board-and-batten-stone-veneer.jpg', alt: 'Renovated home exterior with board and batten siding and stone accents', category: 'siding', caption: 'Exterior Siding and Stone Renovation' },
+    { src: '/images/white-board-and-batten-siding-stone-veneer.jpg', alt: 'White board and batten siding with stone veneer wrapping the home', category: 'siding', caption: 'White Board and Batten Exterior' },
+
+    { src: '/images/renovated-deck.jpg', alt: 'Renovated composite deck with black and white railing', category: 'decks-patios', caption: 'Renovated Composite Deck' },
+    { src: '/images/renovated-stone-patio.jpg', alt: 'Stone patio and fire pit area illuminated with landscape lighting at night', category: 'decks-patios', caption: 'Renovated Stone Patio with Lighting' },
+    { src: '/images/stone-patio.jpg', alt: 'Stone patio and fire pit connected to deck railing and retaining wall', category: 'decks-patios', caption: 'Stone Patio and Fire Pit Area' },
+    { src: '/images/front-porch-composite-deck-railings.jpg', alt: 'Front porch composite decking with black metal railings', category: 'decks-patios', caption: 'Front Porch Composite Deck Railings' },
+    { src: '/images/pressure-treated-deck-framing-construction.jpg', alt: 'Pressure-treated deck framing construction before finish boards', category: 'decks-patios', caption: 'Pressure-Treated Deck Framing' },
+    { src: '/images/raised-deck-and-stairs-exterior-remodel.jpg', alt: 'Raised deck with stairs as part of an exterior remodel', category: 'decks-patios', caption: 'Raised Deck and Stair Remodel' },
+
+    { src: '/images/excavation-foundation-measurement.jpg', alt: 'Excavation and foundation measurement for site preparation work', category: 'general-home-improvement', caption: 'Excavation and Foundation Prep' },
   ],
   team: [], // [PLACEHOLDER — confirm with client] no team/staff photos provided
 };
@@ -210,7 +213,7 @@ export const photos = {
 export const galleryCategories = [
   { id: 'all', label: 'All Projects' },
   ...services
-    .filter((service) => service.slug !== 'painting')
+    .filter((service) => !['painting', 'general-home-improvement'].includes(service.slug))
     .map((service) => ({ id: service.slug, label: service.name })),
 ];
 
