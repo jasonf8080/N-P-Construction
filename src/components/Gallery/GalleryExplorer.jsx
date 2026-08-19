@@ -29,7 +29,7 @@ export default function GalleryExplorer() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {visiblePhotos.map((photo) => (
             <figure
               key={photo.src + photo.caption}

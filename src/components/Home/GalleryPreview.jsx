@@ -20,7 +20,7 @@ export default function GalleryPreview() {
             <figure
               key={photo.src + photo.caption}
               data-reveal
-              className="group relative h-[280px] w-[80%] shrink-0 snap-center overflow-hidden rounded-xl md:h-[420px] md:w-[34%]"
+              className="group relative h-[340px] w-[88%] shrink-0 snap-center overflow-hidden rounded-xl md:h-[420px] md:w-[34%]"
             >
               <img
                 src={photo.src}

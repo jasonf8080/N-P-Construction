@@ -172,8 +172,8 @@ export const photos = {
       alt: 'Raised deck and stairs exterior remodel project',
     },
     'general-home-improvement': {
-      src: '/images/bath-shower-fixtures.jpg',
-      alt: 'Bathroom shower fixture upgrade as part of a general home improvement project',
+      src: '/images/excavation-foundation-measurement.jpg',
+      alt: 'Excavation and foundation measurement as part of a general home improvement project',
     },
   },
   gallery: [
