@@ -113,8 +113,8 @@ export const reviews = [];
 export const contact = {
   phone: '845-891-8022',
   phoneHref: 'tel:8458918022',
-  // [PLACEHOLDER — confirm with client] no business email exists yet
-  email: null,
+  email: 'homeimprovements2012@gmail.com',
+  emailHref: 'mailto:homeimprovements2012@gmail.com',
   address: null, // [PLACEHOLDER — confirm with client] service-area business, no storefront/HQ given
   hours: [{ dayRange: 'Monday – Friday', timeRange: '8:00 AM – 5:00 PM' }],
 };

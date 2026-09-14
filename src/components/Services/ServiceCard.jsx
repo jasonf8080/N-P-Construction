@@ -33,6 +33,7 @@ export default function ServiceCard({ service }) {
 
           <Link
             to="/contact"
+            state={{ serviceName: service.name, serviceSlug: service.slug }}
             className="inline-flex w-fit items-center gap-1 rounded-md bg-transparent px-0 py-1 text-[12px] font-extrabold uppercase tracking-wide text-primary transition-colors hover:text-primary/80 md:text-[13px]"
           >
             Learn More

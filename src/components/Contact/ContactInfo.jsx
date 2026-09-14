@@ -1,9 +1,10 @@
-import { FaPhoneAlt, FaClock, FaTools } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaClock, FaTools } from 'react-icons/fa';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import { contact, serviceAreas } from '../../data';
 
 const items = [
   { icon: FaPhoneAlt, title: 'Phone', body: <a href={contact.phoneHref}>{contact.phone}</a> },
+  { icon: FaEnvelope, title: 'Email', body: <a href={contact.emailHref}>{contact.email}</a> },
   {
     icon: FaClock,
     title: 'Hours',

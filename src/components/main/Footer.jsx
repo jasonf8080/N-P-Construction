@@ -30,6 +30,9 @@ export default function Footer() {
             <a href={contact.phoneHref} className="mt-4 inline-block text-sm font-bold text-white">
               {contact.phone}
             </a>
+            <a href={contact.emailHref} className="mt-2 inline-block text-sm font-bold text-white hover:text-primary">
+              {contact.email}
+            </a>
             {activeSocials.length > 0 && (
               <div className="mt-5 flex gap-3">
                 {activeSocials.map(({ Icon, href }) => (

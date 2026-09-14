@@ -1,6 +1,19 @@
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { services, contact } from '../../data';
 
 export default function ContactForm() {
+  const location = useLocation();
+  const preselectedServiceName =
+    location.state?.serviceName ||
+    services.find((service) => service.slug === location.state?.serviceSlug)?.name ||
+    '';
+  const [selectedService, setSelectedService] = useState(preselectedServiceName);
+
+  useEffect(() => {
+    setSelectedService(preselectedServiceName);
+  }, [preselectedServiceName]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // No backend wired up yet — see NOTES-before-launch.md. Swap this alert
@@ -19,12 +32,17 @@ export default function ContactForm() {
         <input type="text" placeholder="Full Name" required className="rounded border border-neutral-200 px-4 py-3 text-sm" />
         <input type="tel" placeholder="Phone Number" required className="rounded border border-neutral-200 px-4 py-3 text-sm" />
 
-        <select required defaultValue="" className="rounded border border-neutral-200 px-4 py-3 text-sm">
+        <select
+          required
+          value={selectedService}
+          onChange={(event) => setSelectedService(event.target.value)}
+          className="rounded border border-neutral-200 px-4 py-3 text-sm"
+        >
           <option value="" disabled>
             Project Type
           </option>
           {services.map((service) => (
-            <option key={service.slug} value={service.slug}>
+            <option key={service.slug} value={service.name}>
               {service.name}
             </option>
           ))}
