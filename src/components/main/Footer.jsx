@@ -27,10 +27,10 @@ export default function Footer() {
             <p className="text-sm text-neutral-400">
               {business.tagline}. Full-service home remodeling across the Hudson Valley since {business.founded}.
             </p>
-            <a href={contact.phoneHref} className="mt-4 inline-block text-sm font-bold text-white">
+            <a href={contact.phoneHref} className="mt-4 block text-sm font-bold text-white">
               {contact.phone}
             </a>
-            <a href={contact.emailHref} className="mt-2 inline-block text-sm font-bold text-white hover:text-primary">
+            <a href={contact.emailHref} className="mt-2 block break-all text-sm font-bold text-white hover:text-primary">
               {contact.email}
             </a>
             {activeSocials.length > 0 && (
